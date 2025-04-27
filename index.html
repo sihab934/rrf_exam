@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RRf Exam</title>
+    <!--Tailwind Output Css file link-->
+    <link rel="stylesheet" href="assets/css/output.css" />
+
+    <!-- Css file link-->
+    <link rel="stylesheet" href="assets/css/unic.css" />
+
+    <!-- jQuery (Google CDN) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- box icon CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--Slick carousel js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!--Slick carousel css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--box icon cdn-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  </head>
+  <body>
+    <!--header container-->
+    <header class="w-full bg-[#FFD4D0] py-[15px] pt-[40px] pb-[10px] sticky top-[-30px] left-0 z-50 ">
+        <div class="container mx-auto px-4 lg:px-[62px] 2xl:px-[124px]">
+            <div class="flex justify-between items-center bg-[#FFD4D0]">
+
+                <!--logo-->
+                <div class="w-[90px] lg:w-[136px] h-[45px]">
+                    <a href="index.html">
+                        <img class="w-full h-full object-contain" src="assets/images/Logo.png" alt="logo"/>
+                    </a>
+                </div>
+    
+                <!--menu items-->
+                <nav class="w-[360px] hidden md:flex items-center justify-end gap-[32px] relative z-10 pt-[3px] pr-[1px]">
+                    <a class="about text-[#1F1F1F] lg:text-lg font-bold leading-[130%] transition duration-500 hover:text-[#04b9c6]" href="#about">About</a>
+                    <a class="services text-[#1F1F1F] lg:text-lg font-bold leading-[130%] transition duration-500 hover:text-[#04b9c6]" href="#services">Services</a>
+                    <a class="protfolio text-[#1F1F1F] lg:text-lg font-bold leading-[130%] transition duration-500 hover:text-[#04b9c6]" href="#protfolio">Portfolio</a>
+                    <a class="blog text-[#1F1F1F] lg:text-lg font-bold leading-[130%] transition duration-500 hover:text-[#04b9c6]" href="#blog">Blog</a>   
+                        
+                    <!--absolute bg-->
+                    <div class="w-[100px] lg:w-[146px] h-[100px] lg:h-[146px] bg-[#FC3314] rounded-full absolute top-[-65px] left-[-65px] lg:top-[-109px] lg:left-[-106px] z-[-10]"></div>
+                </nav>  
+    
+                <!--Let's talk btn-->
+                <div class="flex items-center gap-4">
+                    <a href="#" class="w-[115px] md:w-[127px] h-[38px] md:h-[48px] flex items-center justify-center text-white text-sm md:text-base font-bold bg-[#1F1F1F] leading-[150%] pr-[1px] transition duration-500 hover:bg-white hover:text-[#1F1F1F]">Let’s Talk</a>
+    
+                    <!--menu btn-->
+                    <span class="md:hidden">
+                        <a href="#" class="menu-btn">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.375 8C19.375 8.29837 19.2565 8.58452 19.0455 8.79549C18.8345 9.00647 18.5484 9.125 18.25 9.125H1.75C1.45163 9.125 1.16548 9.00647 0.954505 8.79549C0.743526 8.58452 0.625 8.29837 0.625 8C0.625 7.70163 0.743526 7.41548 0.954505 7.2045C1.16548 6.99353 1.45163 6.875 1.75 6.875H18.25C18.5484 6.875 18.8345 6.99353 19.0455 7.2045C19.2565 7.41548 19.375 7.70163 19.375 8ZM1.75 3.125H18.25C18.5484 3.125 18.8345 3.00647 19.0455 2.7955C19.2565 2.58452 19.375 2.29837 19.375 2C19.375 1.70163 19.2565 1.41548 19.0455 1.2045C18.8345 0.993526 18.5484 0.875 18.25 0.875H1.75C1.45163 0.875 1.16548 0.993526 0.954505 1.2045C0.743526 1.41548 0.625 1.70163 0.625 2C0.625 2.29837 0.743526 2.58452 0.954505 2.7955C1.16548 3.00647 1.45163 3.125 1.75 3.125ZM18.25 12.875H1.75C1.45163 12.875 1.16548 12.9935 0.954505 13.2045C0.743526 13.4155 0.625 13.7016 0.625 14C0.625 14.2984 0.743526 14.5845 0.954505 14.7955C1.16548 15.0065 1.45163 15.125 1.75 15.125H18.25C18.5484 15.125 18.8345 15.0065 19.0455 14.7955C19.2565 14.5845 19.375 14.2984 19.375 14C19.375 13.7016 19.2565 13.4155 19.0455 13.2045C18.8345 12.9935 18.5484 12.875 18.25 12.875Z"
+                                    fill="black"/>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <!--menu bar for phone-->
+            <div id="navPhone" class="hidden">
+                    <div class="fixed inset-0 w-[100%] bg-[#FFD4D0] px-5 pt-[7px] md:p-10 md:hidden z-50">
+                        <div class="flex justify-between items-center py-4 border-b border-gray-400 mb-6">
+                        <!--logo-->
+                        <div>
+                            <a href="index.html"><img class="w-[90px] h-[44px]" src="assets/images/Logo.png" alt="logo"/></a>
+                        </div>
+                        <a class="menu-btn" href="#">
+                            <i class="fa-solid fa-xmark text-2xl"></i></a><!--menu btn-->
+                        </div>
+        
+                        <ul class="flex flex-col gap-6">
+                            <li><a class="about text-sm font-bold leading-[1.3] p-2 block border-2 border-[#FFD4D0] rounded-[10px] transition duration-500 hover:text-[#04b9c6] hover:border-gray-400" href="#about">About</a>
+                            </li>
+                            <li><a class="services text-sm font-bold leading-[1.3] p-2 block border-2 border-[#FFD4D0] rounded-[10px] transition duration-500 hover:text-[#04b9c6] hover:border-gray-400" href="#services">Services</a>
+                            </li>
+                            <li><a class="protfolio text-sm font-bold leading-[1.3] p-2 block border-2 border-[#FFD4D0] rounded-[10px] transition duration-500 hover:text-[#04b9c6] hover:border-gray-400"href="#protfolio">protfolio</a>
+                            </li>
+                            <li><a class="blog text-sm font-bold leading-[1.3] p-2 block border-2 border-[#FFD4D0] rounded-[10px] transition duration-500 hover:text-[#04b9c6] hover:border-gray-400"href="#blog">Blog</a>
+                            </li>
+                        </ul>
+        
+                        <a href="#" class="block text-sm font-bold text-white bg-black px-[24px] py-[12px] leading-[1.5] text-center mt-6 border border-[#1F1F1F] transition duration-500 hover:bg-transparent hover:text-[#1F1F1F]">Let’s Talk</a>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <!--hero setion-->
+    <section class="w-full bg-[#FFD4D0] pt-[22px]">
+        <div class="container mx-auto px-4 lg:px-[62px] 2xl:px-[124px]">   
+            <div class="2xl:h-[518px] md:flex items-end justify-center gap-[20px] lg:gap-[48px]">    
+                <!--hero text-->
+                <div class="md:w-6/12 lg:w-5/12 2xl:w-[457px] h-full flex flex-col items-center md:items-start gap-[47px] py-[40px] md:pt-[64px] md:pb-[80px]">
+
+                    <!--texts-->
+                    <div class="flex flex-col items-center md:items-start">
+                        <h3 class="text:base lg:text-xl text-[#1F1F1F] font-normal leading-[150%] mb-4">UX Designer</h3>
+        
+                        <h1 class="text-[#1F1F1F] text-[32px] lg:text-[48px] font-bold leading-[150%] 2xl:pr-[10px] mb-[17px] ">Hi There, I’m <span class="text-[#FC3314]">John Smith</span></h1>
+            
+                        <p class="text-[#1F1F1F] text-xs lg:text-base text-center md:text-left font-normal leading-[150%]">Welcome to my portfolio of captivating digital experiences. Explore my work and let's create something extraordinary together.</p>
+                    </div>
+        
+                    <!--buttons-->
+                    <div class="flex items-center gap-[20px]">
+                        <a class="w-[177px] h-[48px] flex items-center justify-center text-sm lg:text-base text-white font-bold leading-[150%] bg-[#1F1F1F] pt-[1px] transition duration-500 hover:bg-white hover:text-[#1F1F1F]" href="#">Hire Me</a>
+
+                        <a class="w-[177px] h-[48px] flex items-center justify-center text-sm lg:text-base text-[#1F1F1F] font-bold leading-[150%] pt-[1px] bg-transparent border border-[#1F1F1F] transition duration-500 hover:bg-[#1F1F1F] hover:text-white" href="#">Portfolio</a>
+                    </div>
+                </div>
+        
+                <!--hero image-->
+                <div class="md:w-6/12 lg:w-7/12 2xl:w-[687px] md:h-[400px] lg:h-[487px] flex items-end justify-end  pt-6 md:pt-0">
+                    <img class="w-full h-full" src="assets/images/hero.png" alt="">
+                </div>       
+            </div>
+        </div>
+    </section>   
+    
+    <!--main content area-->
+    <main>
+        <!--section about us-->
+        <section id="about" class="bg-[#1F1F1F] py-[100px] lg:pt-[64px] lg:pb-[80px] ">
+            <div class="container mx-auto px-7 lg:px-[88px] 2xl:px-[188px] relative z-1">
+                <div class="md:h-[301px] flex flex-col justify-between items-center gap-[25px] md:gap-0">
+
+                    <!--about me text-->
+                    <div class="xl:w-[810px] flex flex-col items-center gap-[25px]">
+                        <h2 class="text-white text-2xl md:text-4xl font-bold leading-[150%]">About Me</h2>
+                        <p class="text-white text-xs sm:text-sm md:text-base font-normal leading-[150%] text-center ">I'm John Smith, a UI/UX designer dedicated to crafting intuitive and visually stunning digital experiences. With a passion for user-centric design, I transform ideas into functional and beautiful  interfaces. Let's collaborate and shape the future of design together.</p>
+                    </div>
+
+                    <!--about project,experience, clients-->
+                    <div class="w-full flex flex-col sm:flex-row justify-center items-center md:items-start gap-[25px] md:gap-[64px]">
+                        <!--project-->
+                        <div class="md:w-4/12 2xl:w-[312px] flex flex-col items-center flex-[1_0_0]">
+                            <h2 class="text-[#FFD4D0] text-3xl md:text-5xl lg:text-[64px] font-bold leading-[150%]">502</h2>
+                            <p class="text-white text-base md:text-lg font-bold leading-[130%]">Projects Done</p>
+                        </div>
+
+                        <!--experience-->
+                        <div class="md:w-4/12 2xl:w-[312px] flex flex-col items-center flex-[1_0_0]">
+                            <h2 class="text-[#FFD4D0D9] text-3xl md:text-5xl lg:text-[64px] font-bold leading-[150%]">10+</h2>
+                            <p class="text-white text-base md:text-lg font-bold leading-[130%]">Years of Experience</p>
+                        </div>
+
+                        <!--clients-->
+                        <div class="md:w-4/12 2xl:w-[312px] flex flex-col items-center flex-[1_0_0]">
+                            <h2 class="text-[#FFD4D0] text-3xl md:text-5xl lg:text-[64px] font-bold leading-[150%]">273+</h2>
+                            <p class="text-white text-base md:text-lg font-bold leading-[130%]">Clients Served</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--absolute bg-->
+                <div class="w-[234px] h-[234px] bg-[#FC3314] rounded-full absolute bottom-[-266px] left-[27%] sm:left-[32%] md:left-[36%] lg:left-[42%] z-[1000px]"></div>
+            </div>
+        </section>
+
+        <!--section services-->
+        <section id="services" class="bg-[#FFFFFF] pt-[100px] pb-[64px] lg:py-[64px] relative z-10">
+            <div class="container mx-auto px-4 lg:px-[62px] 2xl:px-[124px]">
+                <div class="flex flex-col justify-center items-center gap-[32px] flex-[1_0_0]">
+
+                    <!--services heading-->
+                    <div class="w-full xl:w-[810px] flex flex-col items-center gap-[24px]">
+                        <h2 class="text-[#1F1F1F] text-2xl md:text-4xl font-bold leading-[150%]">Services</h2>
+                        <p class="text-[#1F1F1F] text-center text-xs sm:text-sm md:text-base font-normal leading-[150%]">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+                    </div>
+
+                    <!--services-->
+                    <div class="w-full flex flex-col sm:flex-row flex-wrap lg:flex-nowrap items-start gap-[20px] xl:gap-[32px]">
+                        <!--service-1-->
+                        <div class="w-[80%] sm:w-[40%] lg:w-auto flex flex-col items-center sm:items-start gap-[24px] lg:flex-[1_0_0] self-stretch p-[16px] mx-auto">
+                            <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.9902 11.5605C24.1142 12.5318 24.2521 13.4415 24.4092 14.293C25.0726 17.8899 26.088 20.5771 27.8516 22.5527C29.6275 24.5422 32.0529 25.6895 35.2764 26.4355C36.1882 26.6466 37.1735 26.8254 38.2363 26.9844C37.1735 27.1434 36.1882 27.3241 35.2764 27.5352C32.053 28.2811 29.6275 29.4276 27.8516 31.417C26.0879 33.3927 25.0726 36.0807 24.4092 39.6777C24.2522 40.5287 24.1141 41.4376 23.9902 42.4082C23.8661 41.4374 23.7285 40.5279 23.5713 39.6768C22.9069 36.0798 21.891 33.3926 20.127 31.417C18.3506 29.4276 15.9248 28.2812 12.7012 27.5352C11.7889 27.3241 10.8036 27.1434 9.74023 26.9844C10.8035 26.8254 11.789 26.6466 12.7012 26.4355C15.9249 25.6895 18.3506 24.5421 20.127 22.5527C21.8909 20.5771 22.9069 17.8899 23.5713 14.293C23.7286 13.4415 23.866 12.5318 23.9902 11.5605Z" stroke="#FC3314" stroke-width="2"/>
+                            </svg>
+                                
+                            <h4 class="text-[#1F1F1F] lg:text-lg font-bold leading-[130%]">Design</h4>
+                            <p class="text-[#1F1F1F] text-xs text-center sm:text-start lg:text-sm font-normal leading-[150%]">I specialize in web development and design, creating visually appealing, user-friendly digital experiences.</p>
+                        </div>
+
+                        <!--service-2-->
+                        <div class="w-[80%] sm:w-[40%] lg:w-auto flex flex-col items-center sm:items-start gap-[24px] lg:flex-[1_0_0] self-stretch p-[16px] mx-auto">
+                            <svg width="88" height="54" viewBox="0 0 88 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="27" r="21" stroke="#FC3314" stroke-width="2"/>
+                                <circle cx="44" cy="27" r="21" stroke="#FC3314" stroke-width="2"/>
+                                <circle cx="66" cy="27" r="21" stroke="#FC3314" stroke-width="2"/>
+                            </svg>
+                                
+                            <h4 class="text-[#1F1F1F] lg:text-lg font-bold leading-[130%]">Branding</h4>
+                            <p class="text-[#1F1F1F] text-xs lg:text-sm text-center sm:text-start font-normal leading-[150%]">I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.</p>
+                        </div>
+
+                        <!--service-3-->
+                        <div class="w-[80%] sm:w-[40%] lg:w-auto flex flex-col items-center sm:items-start gap-[24px] lg:flex-[1_0_0] self-stretch p-[16px] mx-auto">
+                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.5004 11.2504H45.0004" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M31.5004 18.0004H38.2504" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M47.2504 25.8754C47.2504 37.6879 37.6879 47.2504 25.8754 47.2504C14.0629 47.2504 4.50043 37.6879 4.50043 25.8754C4.50043 14.0629 14.0629 4.50037 25.8754 4.50037" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M49.5004 49.5004L45.0004 45.0004" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                            <h4 class="text-[#1F1F1F] lg:text-lg font-bold leading-[130%]">UX Research</h4>
+                            <p class="text-[#1F1F1F] text-xs lg:text-sm text-center sm:text-start font-normal leading-[150%]">"I specialize in user experience research, collaborating on web development, and ensuring user-friendly digital products.</p>
+                        </div>
+
+                        <!--service-4-->
+                        <div class="w-[80%] sm:w-[40%] lg:w-auto flex flex-col items-center sm:items-start gap-[24px] lg:flex-[1_0_0]  self-stretch p-[16px] mx-auto ">
+                            <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.2222 42.1111H50.1111" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.2222 27.8889H50.1111" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.2222 13.6666H50.1111" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 14L11 16L17 10" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 28L11 30L17 24" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 42L11 44L17 38" stroke="#FC3314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                                
+                            <h4 class="text-[#1F1F1F] lg:text-lg font-bold leading-[130%]">Usability Testing</h4>
+                            <p class="text-[#1F1F1F] text-xs lg:text-sm text-center sm:text-start font-normal leading-[150%]">I perform usability testing and optimize designs websites based on real-user feedback for <br> seamless interactions.</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+        <!--section portfolio-->
+        <section id="protfolio" class="bg-[#F7F7F7]">
+            <div class="flex flex-col justify-end items-start">
+                <!--protfolio heading-->
+                <div class="w-full bg-[#FFD4D0] pt-[90px] lg:pt-[50px] pb-[142px]">
+                    <div class="container mx-auto px-4 lg:px-[62px] 2xl:px-[124px]">
+                        <div class="xl:w-[810px] flex flex-col justify-center items-center gap-[24px] flex-[1_0_0] mx-auto">
+                            <h2 class="text-[#1F1F1FD9] text-2xl md:text-[35px] font-bold leading-[150%]">My Portfolio</h2>
+                            <p class="xl:w-[810px] text-[#1F1F1F] text-xs sm:text-sm md:text-base font-normal leading-[150%] text-center">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--cards container-->
+                <div class="container mx-auto px-4 lg:px-[62px] 2xl:px-[124px] pb-[64px] mt-[-100px]">
+                    <div class="flex flex-col justify-center items-center gap-[64px]">
+
+                        <!--row-1-->
+                        <div class="flex flex-col md:flex-row items-center md:items-start gap-[32px] xl:gap-[64px] self-stretch">
+                            <!--card 1-->
+                            <div class="lg:w-4/12 2xl:w-[355px] flex flex-col items-start gap-[32px] lg:flex-[1_0_0]">
+                                <img class="w-full h-[198.333px]" src="assets/images/portfoio-1.png" alt="">
+                                
+                                <!--content-->
+                                <div class="flex justify-between items-end self-stretch">
+                                    <div class="flex flex-col gap-[16px]">
+                                        <h4 class="text-[#1F1F1F] text-base xl:text-xl font-bold leading-[150%]">Educational Platform</h4>
+                                        <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">Web Design / Usability Testing</p>
+                                    </div>
+                                    
+            
+                                    <a href="#">
+                                        <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37.666" height="37.666" rx="18.833" transform="matrix(-1 0 0 1 37.6666 0.667297)" fill="#FC3314"/>
+                                            <path d="M25.4253 11.4962L12.2422 24.6793" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M25.4253 21.1669V11.4962H15.7545" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>                                       
+                                </div>                               
+                            </div>
+
+                            <!--card 2-->
+                            <div class="lg:w-4/12 2xl:w-[355px] flex flex-col items-start gap-[32px] lg:flex-[1_0_0]">
+                                <img class="w-full h-[198.333px]" src="assets/images/portfoio-2.png" alt="">
+                                
+                                <!--content-->
+                                <div class="flex justify-between items-end self-stretch">
+                                    <div class="flex flex-col gap-[16px]">
+                                        <h4 class="text-[#1F1F1F] text-base xl:text-xl font-bold leading-[150%]">Travel App Desi gn</h4>
+                                        <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">UX Research / App Design</p>
+                                    </div>
+                                    
+            
+                                    <a href="#">
+                                        <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37.666" height="37.666" rx="18.833" transform="matrix(-1 0 0 1 37.6666 0.667297)" fill="#FC3314"/>
+                                            <path d="M25.4253 11.4962L12.2422 24.6793" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M25.4253 21.1669V11.4962H15.7545" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>                                       
+                                </div>                               
+                            </div>
+
+                            <!--card 3-->
+                            <div class="lg:w-4/12 2xl:w-[355px] flex flex-col items-start gap-[32px] lg:flex-[1_0_0]">
+                                <img class="w-full h-[198.333px]" src="assets/images/portfoio-3.png" alt="">
+                                
+                                <!--content-->
+                                <div class="flex justify-between items-end self-stretch">
+                                    <div class="flex flex-col gap-[16px]">
+                                        <h4 class="text-[#1F1F1F] text-base xl:text-xl font-bold leading-[150%]">Personal Page</h4>
+                                        <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">Web Design</p>
+                                    </div>
+                                    
+            
+                                    <a href="#">
+                                        <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37.666" height="37.666" rx="18.833" transform="matrix(-1 0 0 1 37.6666 0.667297)" fill="#FC3314"/>
+                                            <path d="M25.4253 11.4962L12.2422 24.6793" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M25.4253 21.1669V11.4962H15.7545" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>                                      
+                                </div>                               
+                            </div>
+                        </div>
+
+                        <!--row-2-->
+                        <div class="flex flex-col md:flex-row items-center md:items-start gap-[20px] xl:gap-[64px] self-stretch">
+                            <!--card 4-->
+                            <div class="lg:w-4/12 2xl:w-[355px] flex flex-col items-start gap-[32px] lg:flex-[1_0_0]">
+                                <img class="w-full h-[198.333px]" src="assets/images/portfoio-4.png" alt="">
+                                
+                                <!--content-->
+                                <div class="flex justify-between items-end self-stretch">
+                                    <div class="flex flex-col gap-[16px]">
+                                        <h4 class="text-[#1F1F1F] text-base xl:text-xl font-bold leading-[150%]">Furniture Mobile App</h4>
+                                        <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">App Design </p>
+                                    </div>
+                                    
+            
+                                    <a href="#">
+                                        <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37.666" height="37.666" rx="18.833" transform="matrix(-1 0 0 1 37.6666 0.667297)" fill="#FC3314"/>
+                                            <path d="M25.4253 11.4962L12.2422 24.6793" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M25.4253 21.1669V11.4962H15.7545" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>                                       
+                                </div>                               
+                            </div>
+
+                            <!--card 5-->
+                            <div class="lg:w-4/12 2xl:w-[355px] flex flex-col items-start gap-[32px] lg:flex-[1_0_0]">
+                                <img class="w-full h-[198.333px]" src="assets/images/portfoio-5.png" alt="">
+                                
+                                <!--content-->
+                                <div class="flex justify-between items-end self-stretch">
+                                    <div class="flex flex-col gap-[16px]">
+                                        <h4 class="text-[#1F1F1F] text-base xl:text-xl font-bold leading-[150%]">Coffee House Landing Page</h4>
+                                        <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">UX Research / Web Design </p>
+                                    </div>                                  
+            
+                                    <a href="#">
+                                        <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37.666" height="37.666" rx="18.833" transform="matrix(-1 0 0 1 37.6666 0.667297)" fill="#FC3314"/>
+                                            <path d="M25.4253 11.4962L12.2422 24.6793" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M25.4253 21.1669V11.4962H15.7545" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>                                      
+                                </div>                               
+                            </div>
+
+                            <!--card 6-->
+                            <div class="lg:w-4/12 2xl:w-[355px] flex flex-col items-start gap-[32px] lg:flex-[1_0_0]">
+                                <img class="w-full h-[198.333px]" src="assets/images/portfoio-6.png" alt="">
+                                
+                                <!--content-->
+                                <div class="flex justify-between items-end self-stretch">
+                                    <div class="flex flex-col gap-[16px]">
+                                        <h4 class="text-[#1F1F1F] text-base xl:text-xl font-bold leading-[150%]">Home Services Page</h4>
+                                        <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">Web Design / Marketing</p>
+                                    </div>
+                                    
+                                    <a href="#">
+                                        <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="37.666" height="37.666" rx="18.833" transform="matrix(-1 0 0 1 37.6666 0.667297)" fill="#FC3314"/>
+                                            <path d="M25.4253 11.4962L12.2422 24.6793" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M25.4253 21.1669V11.4962H15.7545" stroke="white" stroke-width="1.41248" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>                                       
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <!--section Core Design Skills-->
+        <section class="bg-[#F7F7F7] py-[90px] relative z-10">
+            <div class="container mx-auto px-7 lg:px-[88px] 2xl:px-[188px]">
+                <div class="flex flex-col items-center gap-[64px]">
+
+                    <!--Core Design Skills heading-->
+                    <div class="xl:w-[810px] flex flex-col items-center gap-[24px]">
+                        <h2 class="text-[#1F1F1F] text-2xl md:text-[36px] font-bold leading-[150%]">Core Design Skills</h2>
+                        <p class="xl:w-[810px] text-[#1F1F1F] text-xs sm:text-sm md:text-base font-normal leading-[150%] text-center">I excel in essential design skills, creating visually stunning and functional digital experiences. From UI design to UX research, my passion is to craft effective and memorable digital solutions..</p>
+                    </div>
+
+                    <!--Skills container-->
+                    <div class="flex flex-wrap lg:flex-nowrap justify-center items-start gap-[60px] xl:gap-[120px] self-stretch">
+
+                        <!--left column-->
+                        <div class="lg:w-6/12 flex flex-col items-start gap-[8px]">
+                            <!--skill 1-->
+                            <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">Interaction Design</h4>
+                            
+                                <!--bar-->
+                                <div class="flex items-center gap-[16px] self-stretch">
+                                    <div class="w-[220px] sm:w-[380px] xl:w-[420px] h-[5px] bg-gray-300">
+                                        <div class="h-full bg-[#1F1F1F] w-[79%]"></div>
+                                    </div>
+                                    <span class="text-[#1F1F1F] text-base font-bold leading-[150%]">70%</span>
+                                </div>                
+                            </div>
+
+                            <!--skill 2-->
+                            <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">Usability Testing</h4>
+                            
+                                <!--bar-->
+                                <div class="flex items-center gap-[16px] self-stretch">
+                                    <div class="w-[220px] sm:w-[380px] xl:w-[421px] h-[5px] bg-gray-300">
+                                        <div class="h-full bg-[#1F1F1F] w-[71%]"></div>
+                                    </div>
+                                    <span class="text-[#1F1F1F] text-base font-bold leading-[150%]">60%</span>
+                                </div>                
+                            </div>
+
+                            <!--skill 3-->
+                            <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">User Research</h4>
+                            
+                                <!--bar-->
+                                <div class="flex items-center gap-[8px] self-stretch">
+                                    <div class="w-[220px] sm:w-[380px] xl:w-[429px] h-[5px] bg-gray-300">
+                                        <div class="h-full bg-[#1F1F1F] w-[48%]"></div>
+                                    </div>
+                                    <span class="text-[#1F1F1F] text-base font-bold leading-[150%]">45%</span>
+                                </div>                
+                            </div>
+                        </div>
+        
+                        <!--right column-->
+                        <div class="lg:w-6/12 flex flex-col items-start gap-[8px]">
+                            <!--skill 4-->
+                            <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">Figma</h4>
+                            
+                                <!--bar-->
+                                <div class="flex items-center gap-[16px] self-stretch">
+                                    <div class="w-[220px] sm:w-[380px] xl:w-[422px] h-[5px] bg-gray-300">
+                                        <div class="h-full bg-[#1F1F1F] w-[96%]"></div>
+                                    </div>
+                                    <span class="text-[#1F1F1F] text-base font-bold leading-[150%]">95%</span>
+                                </div>                
+                            </div>
+
+                            <!--skill 5-->
+                            <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">Prototyping</h4>
+                            
+                                <!--bar-->
+                                <div class="flex items-center gap-[16px] self-stretch">
+                                    <div class="w-[220px] sm:w-[380px] xl:w-[420px] h-[5px] bg-gray-300">
+                                        <div class="h-full bg-[#1F1F1F] w-[90%]"></div>
+                                    </div>
+                                    <span class="text-[#1F1F1F] text-base font-bold leading-[150%]">80%</span>
+                                </div>                
+                            </div>
+
+                            <!--skill 6-->
+                            <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">Information Architecture</h4>
+                            
+                                <!--bar-->
+                                <div class="flex items-center gap-[8px] self-stretch">
+                                    <div class="w-[220px] sm:w-[380px] xl:w-[429px] h-[5px] bg-gray-300">
+                                        <div class="h-full bg-[#1F1F1F] w-[54.5%]"></div>
+                                    </div>
+                                    <span class="text-[#1F1F1F] text-base font-bold leading-[150%]">50%</span>
+                                </div>                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>     
+        
+        <!--testimonial services-->
+        <section class="bg-[#FFD4D0] pt-[100px] pb-[64px] lg:pt-[90px] lg:pb-[64px] relative">
+            <div class="container mx-auto px-4 lg:px-[62px] 2xl:px-[124px]">
+                <div class="flex flex-col items-center gap-[32px] flex-[1_0_0] relative ">
+
+                    <!--absolute circle bg-->
+                    <div class="w-[122px] h-[122px] bg-[#FC3314] rounded-full absolute top-[-152px] left-[36.8%] sm:left-[40.8%] md:left-[42.8%] lg:left-[44.8%]  z-[-1000px]"></div>
+
+                    <h2 class="text-[#1F1F1F] text-2xl md:text-4xl font-bold leading-[150%]">Testemonials</h2>
+
+                    <!--testimonial-->
+                    <div class="card-list w-[100%] mx-auto relative">
+                        <!--item 1-->
+                        <div class="card-item">
+                            <div class="max-w-[768px] flex flex-col items-center gap-[32px] mx-auto">
+                                <p class="text-[#1F1F1F] text-xs sm:text-sm md:text-base font-normal leading-[150%] text-center">Sara Jones's designs are both visually captivating and highly effective. She transformed our website, enhancing user engagement and conversions. Her attention to detail and creative approach are top-notch. Highly recommended!</p>
+          
+                                <!--client img and info-->
+                                <div class="flex items-center justify-center gap-[16px]">
+                                    <img class="w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] rounded-full" src="assets/images/ceo.png" alt="">
+                                    <h4 class="flex flex-col md:flex-row text-[#1F1F1F] text-sm sm:text-base font-light sm:font-normal leading-[150%]"><span class="font-bold pr-[4px]"> John Smith</span> / CEO of XYZ Company</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--item 2-->
+                        <div class="card-item">
+                            <div class="max-w-[768px] flex flex-col items-center gap-[32px] mx-auto ">
+                                <p class="text-[#1F1F1F] text-xs sm:text-sm md:text-base font-normal leading-[150%] text-center">Sara Jones's designs are both visually captivating and highly effective. She transformed our website, enhancing user engagement and conversions. Her attention to detail and creative approach are top-notch. Highly recommended!</p>
+          
+                                <!--client img and info-->
+                                <div class="flex items-center justify-center gap-[16px]">
+                                    <img class="w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] rounded-full" src="assets/images/ceo.png" alt="">
+                                    <h4 class="flex flex-col md:flex-row text-[#1F1F1F] text-sm sm:text-base font-light sm:font-normal leading-[150%]"><span class="font-bold pr-[4px]"> John Smith</span> / CEO of XYZ Company</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--item 3-->
+                        <div class="card-item">
+                            <div class="max-w-[768px] flex flex-col items-center gap-[32px] mx-auto">
+                                <p class="text-[#1F1F1F] text-xs sm:text-sm md:text-base font-normal leading-[150%] text-center">Sara Jones's designs are both visually captivating and highly effective. She transformed our website, enhancing user engagement and conversions. Her attention to detail and creative approach are top-notch. Highly recommended!</p>
+          
+                                <!--client img and info-->
+                                <div class="flex items-center justify-center gap-[16px]">
+                                    <img class="w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] rounded-full" src="assets/images/ceo.png" alt="">
+                                    <h4 class="flex flex-col md:flex-row text-[#1F1F1F] text-sm sm:text-base font-light sm:font-normal leading-[150%]"><span class="font-bold pr-[4px]"> John Smith</span> / CEO of XYZ Company</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--item 4-->
+                        <div class="card-item">
+                            <div class="max-w-[768px] flex flex-col items-center gap-[32px] mx-auto">
+                                <p class="text-[#1F1F1F] text-xs sm:text-sm md:text-base font-normal leading-[150%] text-center">Sara Jones's designs are both visually captivating and highly effective. She transformed our website, enhancing user engagement and conversions. Her attention to detail and creative approach are top-notch. Highly recommended!</p>
+          
+                                <!--client img and info-->
+                                <div class="flex items-center justify-center gap-[16px]">
+                                    <img class="w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] rounded-full" src="assets/images/ceo.png" alt="">
+                                    <h4 class="flex flex-col md:flex-row text-[#1F1F1F] text-sm sm:text-base font-light sm:font-normal leading-[150%]"><span class="font-bold pr-[4px]">John Smith</span> / CEO of XYZ Company</h4>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </section>     
+        
+        <!--section Design Insights and Inspiration-->
+        <section id="blog" class="bg-[#F7F7F7] py-[90px] relative">
+            <div class="container mx-auto px-4 lg:px-[62px] 2xl:px-[124px]">
+                <div class="flex flex-col items-center gap-[48px]">
+
+                    <!--Design Insights and Inspiration heading-->
+                    <div class="xl:w-[799px] flex flex-col items-center gap-[16px]">
+                        <h2 class="text-[#1F1F1F] text-center text-2xl md:text-[36px] font-bold leading-[150%]">Design Insights and Inspiration</h2>
+                        <p class="xl:w-[799px] text-[#1F1F1F] text-xs sm:text-sm md:text-base font-normal leading-[150%] text-center">Discover industry insights, expert tips, and design inspiration. Stay updated with the latest trends in web design and user experience.</p>
+                    </div>
+
+                    <!--cards container-->
+                    <div class="w-full flex flex-col md:flex-row justify-between items-start gap-[30px]">
+                        <!--card 1-->
+                        <div class="w-[80%] lg:w-4/12 2xl:w-[336px] bg-[#FFFFFF] flex flex-col items-center gap-[32px] self-stretch mx-auto xl:mx-0">
+                            <!--image-->
+                            <img class="w-full h-[202.154px]" src="assets/images/blog1.png" alt="">
+                            
+                                
+                            <!--content-->
+                            <div class="flex flex-col items-start gap-[16px] self-stretch px-[16px] pb-[16px]">
+                                <!--text-->
+                                <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                    <h6 class="text-[#1F1F1F] text-xs font-normal leading-[150%]">August 15, 2023 / UX</h6>
+                                    <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">Typography Tips for Design Success</h4>
+                                    <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">Dive into the world of web typography and discover how to choose, pair, and optimize fonts for compelling and readable digital designs.</p>
+                                </div>
+                                    
+            
+                                <!--link-->
+                                <a href="#" class="flex items-center gap-[8px]">
+                                    <span class="text-[#1F1F1F] text-xs font-bold leading-[150%]">Read More</span>
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.93994 14.1005L10.2866 9.75386C10.7999 9.24053 10.7999 8.40053 10.2866 7.88719L5.93994 3.54053" stroke="#1F1F1F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>                                       
+                            </div>                               
+                        </div>
+
+                        <!--card 2-->
+                        <div class="w-[80%] lg:w-4/12 2xl:w-[336px] bg-[#FFFFFF] flex flex-col items-center gap-[32px] self-stretch mx-auto xl:mx-0">
+                            <!--image-->
+                            <img class="w-full h-[197px]" src="assets/images/blog2.png" alt="">
+
+                            
+                            <!--content-->
+                            <div class="flex flex-col justify-between items-start flex-[1_0_0] self-stretch px-[16px] pb-[16px]">
+                                <!--text-->
+                                <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                    <h6 class="text-[#1F1F1F] text-xs font-normal leading-[150%]">August 15, 2023 / UX</h6>
+                                    <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">Color Psychology in UX</h4>
+                                    <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">Explore how color choices impact user emotions and decision-making in UX design.</p>
+                                </div>
+                                    
+            
+                                <!--link-->
+                                <a href="#" class="flex items-center gap-[8px]">
+                                    <span class="text-[#1F1F1F] text-xs font-bold leading-[150%]">Read More</span>
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.93994 14.1005L10.2866 9.75386C10.7999 9.24053 10.7999 8.40053 10.2866 7.88719L5.93994 3.54053" stroke="#1F1F1F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>                                       
+                            </div>                               
+                        </div>
+
+                        <!--card 3-->
+                        <div class="w-[80%]  lg:w-4/12 2xl:w-[336px] bg-[#FFFFFF] flex flex-col items-center gap-[32px] self-stretch mx-auto xl:mx-0">
+                            <!--image-->
+                            <img class="w-full h-[197px]" src="assets/images/blog3.png" alt="">
+                            
+                                
+                            <!--content-->
+                            <div class="flex flex-col justify-between items-start flex-[1_0_0] self-stretch px-[16px] pb-[16px]">
+                                <!--text-->
+                                <div class="flex flex-col items-start gap-[8px] self-stretch">
+                                    <h6 class="text-[#1F1F1F] text-xs font-normal leading-[150%]">August 15, 2023 / UX</h6>
+                                    <h4 class="text-[#1F1F1F] text-base font-bold leading-[150%]">Boosting UX with Microinteractions</h4>
+                                    <p class="text-[#1F1F1F] text-xs xl:text-sm font-normal leading-[150%]">Discover the power of microinteractions in enhancing user experience and engagement.</p>
+                                </div>
+                                    
+            
+                                <!--link-->
+                                <a href="#" class="flex items-center gap-[8px]">
+                                    <span class="text-[#1F1F1F] text-xs font-bold leading-[150%]">Read More</span>
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.93994 14.1005L10.2866 9.75386C10.7999 9.24053 10.7999 8.40053 10.2866 7.88719L5.93994 3.54053" stroke="#1F1F1F" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>                                       
+                            </div>                               
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>   
+        
+        <!--section Get in Touch-->
+        <section class="bg-[#FFD4D0] py-[124px] relative">
+            <!--absolute bg-->
+            <div class="w-[221px] h-[221px] bg-[#FC3314] rounded-full absolute left-[-135px] top-[226.846px]"></div>
+
+            <div class="container mx-auto px-4 lg:px-[62px] 2xl:px-[124px]">
+                <div class="w-full flex flex-col md:flex-row items-center md:items-start gap-[32px] xl:gap-[60px] relative z-10">
+                    <!--contact info-->
+                    <div class="w-full md:w-6/12 lg:w-auto flex flex-col justify-between gap-[30px] xl:gap-0 items-start lg:flex-[1_0_0] self-stretch">
+                        <!--container for text-->
+                        <div class="flex flex-col items-start gap-[64px] self-stretch">
+                            <!--heading-->
+                            <div class="flex flex-col items-start gap-[16px] self-stretch">
+                                <h2 class="text-[#1F1F1F] text-2xl md:text-4xl font-bold leading-[150%]">Get in Touch</h2>
+                                <p class="text-[#1F1F1F] text-sm md:text-base font-normal leading-[150%]">Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
+                            </div>
+
+                            <!--contact info-->
+                            <div class="flex flex-col items-start gap-[32px] self-stretch">
+                                <!--phone number-->
+                                <p class="flex items-center gap-[16px]">
+                                    <svg class="mt-[-1px]" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 11.8198H22C22 6.6898 18.127 2.8208 12.99 2.8208V4.8208C17.052 4.8208 20 7.7638 20 11.8198Z" fill="#1F1F1F"/>
+                                        <path d="M13 8.8208C15.103 8.8208 16 9.7178 16 11.8208H18C18 8.5958 16.225 6.8208 13 6.8208V8.8208ZM16.422 14.2638C16.2299 14.0891 15.9774 13.996 15.7178 14.004C15.4583 14.012 15.212 14.1206 15.031 14.3068L12.638 16.7678C12.062 16.6578 10.904 16.2968 9.71204 15.1078C8.52004 13.9148 8.15904 12.7538 8.05204 12.1818L10.511 9.7878C10.6975 9.60692 10.8062 9.36062 10.8142 9.101C10.8222 8.84139 10.7289 8.58884 10.554 8.3968L6.85904 4.3338C6.68408 4.14115 6.44092 4.0243 6.18119 4.00806C5.92146 3.99181 5.66564 4.07745 5.46804 4.2468L3.29804 6.1078C3.12515 6.28131 3.02196 6.51225 3.00804 6.7568C2.99304 7.0068 2.70704 12.9288 7.29904 17.5228C11.305 21.5278 16.323 21.8208 17.705 21.8208C17.907 21.8208 18.031 21.8148 18.064 21.8128C18.3086 21.7991 18.5394 21.6955 18.712 21.5218L20.572 19.3508C20.7415 19.1533 20.8273 18.8976 20.8113 18.6378C20.7952 18.3781 20.6785 18.1349 20.486 17.9598L16.422 14.2638Z" fill="#1F1F1F"/>
+                                    </svg>                    
+                                    <span class="text-[#1F1F1F] text-sm md:text-base font-normal leading-[150%]">+1205 5872 321</span>
+                                </p>
+
+                                <!--Email addrss-->
+                                <p class="flex items-center gap-[16px]">
+                                    <svg class="mt-[-1px]" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 4.8208H2V20.8208H22V4.8208ZM20 8.8208L12 13.8208L4 8.8208V6.8208L12 11.8208L20 6.8208V8.8208Z" fill="#1F1F1F" fill-opacity="0.85"/>
+                                    </svg>
+                                                            
+                                    <span class="text-[#1F1F1F] text-sm md:text-base font-normal leading-[150%] pl-[4px]"> contact@sarajonesdesign.com</span>
+                                </p>
+        
+                                <!--location-->
+                                <p class="flex items-center gap-[16px] self-stretch">
+                                    <svg class="mt-[-1px]" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2.3208C9.81276 2.32338 7.71584 3.1934 6.16923 4.74002C4.62261 6.28664 3.75259 8.38356 3.75001 10.5708C3.74739 12.3582 4.33124 14.0971 5.41201 15.5208C5.41201 15.5208 5.63701 15.8171 5.67376 15.8598L12 23.3208L18.3293 15.8561C18.3623 15.8163 18.588 15.5208 18.588 15.5208L18.5888 15.5186C19.669 14.0955 20.2526 12.3574 20.25 10.5708C20.2474 8.38356 19.3774 6.28664 17.8308 4.74002C16.2842 3.1934 14.1873 2.32338 12 2.3208ZM12 13.5708C11.4067 13.5708 10.8266 13.3949 10.3333 13.0652C9.83995 12.7356 9.45543 12.267 9.22837 11.7189C9.00131 11.1707 8.9419 10.5675 9.05765 9.98553C9.17341 9.40359 9.45913 8.86904 9.87869 8.44948C10.2982 8.02992 10.8328 7.7442 11.4147 7.62844C11.9967 7.51269 12.5999 7.5721 13.1481 7.79916C13.6962 8.02622 14.1648 8.41074 14.4944 8.90409C14.8241 9.39744 15 9.97746 15 10.5708C14.999 11.3661 14.6826 12.1286 14.1202 12.691C13.5578 13.2534 12.7954 13.5698 12 13.5708Z" fill="#1F1F1F"/>
+                                    </svg>
+                                                                                        
+                                    <span class="text-[#1F1F1F] text-sm md:text-base font-normal leading-[150%]">1234 Design Street,Creativeville, Webland,Imaginary State, 98765</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--social icons-->
+                        <div class="flex justify-center items-center gap-[24px]">
+                            <a class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center border-2 border-transparent transition duration-500 hover:bg-transparent hover:border-[#1F1F1F]" href="#">
+                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 2.24625C14.4484 2.48057 13.8481 2.64921 13.2298 2.71489C13.8717 2.33933 14.3525 1.74601 14.5818 1.04625C13.9794 1.39913 13.3195 1.64658 12.6313 1.77761C12.3437 1.47482 11.9958 1.2336 11.6094 1.06899C11.2229 0.904373 10.8062 0.819892 10.3852 0.820808C8.68165 0.820808 7.31162 2.18057 7.31162 3.84921C7.31162 4.08353 7.34046 4.31785 7.38733 4.54329C4.83656 4.41193 2.56159 3.21193 1.04915 1.37465C0.77357 1.83817 0.629156 2.36594 0.630934 2.90306C0.630934 3.95394 1.17354 4.88057 2.00096 5.42554C1.51335 5.40663 1.03715 5.27465 0.611104 5.04033V5.07761C0.611104 6.54921 1.66747 7.76873 3.07535 8.04921C2.81101 8.11682 2.53907 8.15141 2.26595 8.15216C2.06586 8.15216 1.87658 8.13264 1.68549 8.10601C2.07487 9.30601 3.20875 10.1776 4.55895 10.206C3.50258 11.0208 2.17943 11.5001 0.742699 11.5001C0.484918 11.5001 0.246966 11.4912 0 11.4628C1.36282 12.3238 2.97981 12.8208 4.72119 12.8208C10.3744 12.8208 13.4677 8.20897 13.4677 4.20601C13.4677 4.07465 13.4677 3.94329 13.4587 3.81193C14.0572 3.38057 14.5818 2.84625 15 2.24625Z" fill="#1F1F1F"/>
+                                </svg>
+                            </a>
+
+                            <a class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center border-2 border-transparent transition duration-500 hover:bg-transparent hover:border-[#1F1F1F]" href="#">
+                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.40795 0.865801C5.20773 0.828983 5.46273 0.820801 7.5 0.820801C9.53727 0.820801 9.79227 0.829664 10.5914 0.865801C11.3905 0.901937 11.9359 1.02944 12.4132 1.21421C12.913 1.40307 13.3664 1.6983 13.7414 2.08012C14.1232 2.45444 14.4177 2.90716 14.6059 3.40762C14.7914 3.88489 14.9182 4.43035 14.955 5.22807C14.9918 6.02921 15 6.28421 15 8.3208C15 10.3581 14.9911 10.6131 14.955 11.4128C14.9189 12.2106 14.7914 12.756 14.6059 13.2333C14.4177 13.7338 14.1227 14.1873 13.7414 14.5622C13.3664 14.944 12.913 15.2385 12.4132 15.4267C11.9359 15.6122 11.3905 15.739 10.5927 15.7758C9.79227 15.8126 9.53727 15.8208 7.5 15.8208C5.46273 15.8208 5.20773 15.8119 4.40795 15.7758C3.61023 15.7397 3.06477 15.6122 2.5875 15.4267C2.08699 15.2385 1.63351 14.9435 1.25864 14.5622C0.877077 14.1876 0.581806 13.7344 0.393409 13.234C0.208636 12.7567 0.0818182 12.2113 0.045 11.4135C0.00818181 10.6124 0 10.3574 0 8.3208C0 6.28353 0.00886363 6.02853 0.045 5.22944C0.0811364 4.43035 0.208636 3.88489 0.393409 3.40762C0.582084 2.90722 0.877581 2.45397 1.25932 2.07944C1.63366 1.69796 2.08669 1.40269 2.58682 1.21421C3.06409 1.02944 3.60955 0.902619 4.40727 0.865801H4.40795ZM10.5307 2.2158C9.73977 2.17966 9.5025 2.17216 7.5 2.17216C5.4975 2.17216 5.26023 2.17966 4.46932 2.2158C3.73773 2.24921 3.34091 2.37126 3.07636 2.47421C2.72659 2.61057 2.47636 2.77216 2.21386 3.03466C1.96503 3.27675 1.77353 3.57145 1.65341 3.89716C1.55045 4.16171 1.42841 4.55853 1.395 5.29012C1.35886 6.08103 1.35136 6.3183 1.35136 8.3208C1.35136 10.3233 1.35886 10.5606 1.395 11.3515C1.42841 12.0831 1.55045 12.4799 1.65341 12.7444C1.77341 13.0697 1.965 13.3649 2.21386 13.6069C2.45591 13.8558 2.75114 14.0474 3.07636 14.1674C3.34091 14.2703 3.73773 14.3924 4.46932 14.4258C5.26023 14.4619 5.49682 14.4694 7.5 14.4694C9.50318 14.4694 9.73977 14.4619 10.5307 14.4258C11.2623 14.3924 11.6591 14.2703 11.9236 14.1674C12.2734 14.031 12.5236 13.8694 12.7861 13.6069C13.035 13.3649 13.2266 13.0697 13.3466 12.7444C13.4495 12.4799 13.5716 12.0831 13.605 11.3515C13.6411 10.5606 13.6486 10.3233 13.6486 8.3208C13.6486 6.3183 13.6411 6.08103 13.605 5.29012C13.5716 4.55853 13.4495 4.16171 13.3466 3.89716C13.2102 3.54739 13.0486 3.29716 12.7861 3.03466C12.544 2.78585 12.2493 2.59435 11.9236 2.47421C11.6591 2.37126 11.2623 2.24921 10.5307 2.2158ZM6.54205 10.6328C7.07704 10.8555 7.67276 10.8856 8.22745 10.7179C8.78215 10.5502 9.2614 10.1951 9.58337 9.71324C9.90534 9.23142 10.05 8.65276 9.99276 8.0761C9.93548 7.49944 9.67978 6.96056 9.26932 6.55148C9.00766 6.28999 8.69128 6.08976 8.34295 5.96522C7.99463 5.84067 7.62302 5.79491 7.25488 5.83122C6.88675 5.86753 6.53124 5.98501 6.21396 6.17521C5.89667 6.3654 5.62551 6.62358 5.41998 6.93115C5.21445 7.23873 5.07967 7.58804 5.02535 7.95396C4.97103 8.31987 4.99851 8.69327 5.10582 9.04729C5.21313 9.40131 5.3976 9.72713 5.64595 10.0013C5.89429 10.2755 6.20034 10.4912 6.54205 10.6328ZM4.77409 5.59489C5.13206 5.23692 5.55704 4.95296 6.02475 4.75923C6.49246 4.5655 6.99375 4.46578 7.5 4.46578C8.00625 4.46578 8.50754 4.5655 8.97525 4.75923C9.44296 4.95296 9.86794 5.23692 10.2259 5.59489C10.5839 5.95286 10.8678 6.37784 11.0616 6.84555C11.2553 7.31326 11.355 7.81455 11.355 8.3208C11.355 8.82705 11.2553 9.32834 11.0616 9.79605C10.8678 10.2638 10.5839 10.6887 10.2259 11.0467C9.50295 11.7697 8.52241 12.1758 7.5 12.1758C6.47759 12.1758 5.49705 11.7697 4.77409 11.0467C4.05113 10.3238 3.64498 9.34321 3.64498 8.3208C3.64498 7.29839 4.05113 6.31785 4.77409 5.59489ZM12.21 5.03989C12.2987 4.95621 12.3697 4.85558 12.4188 4.74396C12.468 4.63235 12.4942 4.51201 12.496 4.39007C12.4977 4.26814 12.475 4.14708 12.4292 4.03408C12.3833 3.92108 12.3153 3.81842 12.2291 3.73219C12.1428 3.64596 12.0402 3.57791 11.9272 3.53206C11.8142 3.48622 11.6931 3.46351 11.5712 3.46529C11.4492 3.46707 11.3289 3.49329 11.2173 3.54241C11.1057 3.59153 11.005 3.66255 10.9214 3.75126C10.7586 3.92378 10.6695 4.15293 10.673 4.39007C10.6764 4.62721 10.7722 4.85367 10.9399 5.02138C11.1076 5.18908 11.334 5.28482 11.5712 5.28828C11.8083 5.29173 12.0375 5.20263 12.21 5.03989Z" fill="#1F1F1F"/>
+                                </svg>
+                            </a>
+
+                            <a class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center border-2 border-transparent transition duration-500 hover:bg-transparent hover:border-[#1F1F1F]" href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 0.320801C3.875 0.320801 0.5 3.6958 0.5 7.8208C0.5 11.9458 3.875 15.3208 8 15.3208C12.125 15.3208 15.5 11.9458 15.5 7.8208C15.5 3.6958 12.125 0.320801 8 0.320801ZM14.1875 7.4458C12.5625 7.1958 11.125 7.1958 9.75 7.3833C9.625 7.0083 9.4375 6.6958 9.25 6.3208C10.6875 5.6958 11.875 4.8208 12.6875 3.7583C13.5625 4.8208 14.125 6.0708 14.1875 7.4458ZM11.75 2.9458C11 3.9458 9.9375 4.6958 8.625 5.2583C8 4.0708 7.3125 2.9458 6.5 1.8208C7 1.6958 7.5 1.6333 8 1.6333C9.4375 1.6333 10.75 2.1333 11.75 2.9458ZM5.1875 2.3208C6 3.3833 6.75 4.5083 7.375 5.6958C5.875 6.1333 4.0625 6.3208 2 6.3833C2.4375 4.5708 3.625 3.1333 5.1875 2.3208ZM1.8125 7.8208V7.6333C4.1875 7.6333 6.3125 7.3833 8 6.8208C8.125 7.1333 8.3125 7.4458 8.4375 7.6958C6.3125 8.3833 4.5625 9.6958 3.25 11.7583C2.375 10.6958 1.8125 9.3208 1.8125 7.8208ZM4.1875 12.6958C5.4375 10.7583 7 9.5083 8.9375 8.9458C9.5 10.4458 9.9375 12.0083 10.1875 13.6333C8.125 14.3833 5.875 14.0083 4.1875 12.6958ZM11.4375 12.9458C11.1875 11.4458 10.75 10.0083 10.25 8.6333C11.4375 8.4458 12.6875 8.5083 14.125 8.7583C13.8125 10.5083 12.875 12.0083 11.4375 12.9458Z" fill="#1F1F1F"/>
+                                </svg>          
+                            </a>
+
+                            <a class="bg-white w-[30px] h-[30px] rounded-full flex justify-center items-center border-2 border-transparent transition duration-500 hover:bg-transparent hover:border-[#1F1F1F]" href="#">
+                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.125 5.3208H0.25V7.8208H2.125V15.3208H5.25V7.8208H7.5L7.75 5.3208H5.25V4.2583C5.25 3.6958 5.375 3.4458 5.9375 3.4458H7.75V0.320801H5.375C3.125 0.320801 2.125 1.3208 2.125 3.1958V5.3208Z" fill="#1F1F1F"/>
+                                </svg>         
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--text feild form-->
+                    <div class="w-full md:w-6/12 lg:w-auto flex-[1_0_0]">
+                        <form class="w-full flex flex-col justify-center items-start gap-[32px] lg:flex-[1_0_0]" action="">
+                            <!--text field-->
+                            <div class="flex flex-col items-start gap-[24px] self-stretch">
+                                <input class="w-full xl:w-[566px] text-[#8D8D8D] text-sm font-normal leading-[150%] bg-white py-[14px] px-[16px] focus:outline-none" type="text" name="first_name" id="first_name" placeholder="First name">
+
+                                <input class="w-full xl:w-[566px] text-[#8D8D8D] text-sm font-normal leading-[150%] bg-white py-[14px] px-[16px] focus:outline-none" type="email" name="email" id="email" placeholder="Email">
+
+                                <input class="w-full xl:w-[566px] text-[#8D8D8D] text-sm font-normal leading-[150%] bg-white py-[14px] px-[16px] focus:outline-none block" type="number" name="phone_number" id="phone_number" placeholder="Phone number">
+
+                                <textarea class="text-[#8D8D8D] text-sm font-normal bg-white w-full py-[14px] px-[16px] focus:outline-none" name="your_message" id="your_message" rows="7" placeholder="Your message"></textarea>
+                            </div>
+
+                            <button class="text-[#FFFFFF] text-base font-bold leading-[150%] bg-[#1F1F1F] py-[12px] px-[56px] cursor-pointer" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>    
+
+    <!--Section footer-->
+    <footer class="bg-[#1F1F1F] py-[80px]">
+        <div class="container mx-auto px-8 lg:px-[150px] 2xl:px-[300px] ">
+            <div class="w-full flex flex-col items-center self-stretch gap-[64px] px-[37.5px]">
+                <!--links-->
+                <div class="w-full flex flex-col sm:flex-row items-center gap-[30px] 2xl:gap-[120px] justify-between 2xl:justify-start">
+                    <div class="flex items-end gap-[15px] md:gap-[32px]">
+                      <a class="about text-white text-xl font-bold leading-[150%] transition duration-500 hover:text-[#04b9c6]" href="#about">About</a>
+                      <a class="services text-white text-xl font-bold leading-[150%] transition duration-500 hover:text-[#04b9c6]" href="#services">Services</a>
+                    </div>
+            
+                    <!--logo-->
+                    <div class="flex items-start justify-center md:justify-start w-[163px]">
+                      <a href="index.html"><img class="w-[140px] sm:w-[163px] h-[40px] sm:h-[54px]" src="assets/images/logo_footer.png"
+                        alt="logo"/></a>
+                    </div>
+            
+                    <div class="flex items-end gap-[15px] md:gap-[32px]">
+                      <a class="protfolio text-white text-xl font-bold leading-[150%] transition duration-500 hover:text-[#04b9c6]" href="#protfolio">Portfolio</a>
+                      <a class="blog text-white text-xl font-bold leading-[150%] transition duration-500 hover:text-[#04b9c6]" href="#blog">Blog</a>
+                    </div>   
+                </div>
+
+                <!--text & social links-->
+                <div class="flex flex-col items-center gap-[32px]">
+                    <p class="text-white text-base font-normal leading-[150%]">Follow me on social media:</p>
+            
+                    <!--social links-->
+                    <div class="flex items-center gap-[32px]">
+                        <a href="#">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.3042 3.02016C15.4152 3.02016 15.804 3.02016 17.0679 3.11737C20.2761 3.21459 21.7344 4.77009 21.8316 7.88108C21.9288 9.14493 21.9288 9.43658 21.9288 12.5476C21.9288 15.6586 21.9288 16.0474 21.8316 17.2141C21.7344 20.3251 20.1789 21.8806 17.0679 21.9778C15.804 22.075 15.5124 22.075 12.3042 22.075C9.19317 22.075 8.8043 22.075 7.63768 21.9778C4.42946 21.8806 2.97118 20.3251 2.87397 17.2141C2.77675 15.9502 2.77675 15.6586 2.77675 12.5476C2.77675 9.43658 2.77675 9.04771 2.87397 7.88108C2.97118 4.77009 4.52668 3.21459 7.63768 3.11737C8.8043 3.02016 9.19317 3.02016 12.3042 3.02016ZM12.3042 0.881348C9.09595 0.881348 8.70708 0.881348 7.54046 0.978566C3.26284 1.173 0.929595 3.50625 0.735158 7.78387C0.637939 8.95049 0.637939 9.33936 0.637939 12.5476C0.637939 15.7558 0.637939 16.1447 0.735158 17.3113C0.929595 21.5889 3.26284 23.9221 7.54046 24.1166C8.70708 24.2138 9.09595 24.2138 12.3042 24.2138C15.5124 24.2138 15.9013 24.2138 17.0679 24.1166C21.3455 23.9221 23.6787 21.5889 23.8732 17.3113C23.9704 16.1447 23.9704 15.7558 23.9704 12.5476C23.9704 9.33936 23.9704 8.95049 23.8732 7.78387C23.6787 3.50625 21.3455 1.173 17.0679 0.978566C15.9013 0.881348 15.5124 0.881348 12.3042 0.881348ZM12.3042 6.52002C8.99874 6.52002 6.27662 9.24214 6.27662 12.5476C6.27662 15.853 8.99874 18.5751 12.3042 18.5751C15.6096 18.5751 18.3317 15.853 18.3317 12.5476C18.3317 9.24214 15.6096 6.52002 12.3042 6.52002ZM12.3042 16.4363C10.1654 16.4363 8.41542 14.6864 8.41542 12.5476C8.41542 10.4088 10.1654 8.65883 12.3042 8.65883C14.443 8.65883 16.1929 10.4088 16.1929 12.5476C16.1929 14.6864 14.443 16.4363 12.3042 16.4363ZM18.5262 4.96453C17.7484 4.96453 17.1651 5.54784 17.1651 6.32559C17.1651 7.10334 17.7484 7.68665 18.5262 7.68665C19.3039 7.68665 19.8872 7.10334 19.8872 6.32559C19.8872 5.54784 19.3039 4.96453 18.5262 4.96453Z" fill="white"/></svg>              
+                        </a>
+            
+                        <a href="#">
+                            <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.30825 19.029C17.1133 19.029 21.9286 11.7341 21.9286 5.40867C21.9286 5.20141 21.9243 4.99521 21.9148 4.78981C22.8494 4.11417 23.662 3.27082 24.3029 2.31122C23.4452 2.6923 22.5222 2.94892 21.5538 3.06462C22.5421 2.47204 23.3011 1.53421 23.6591 0.416455C22.734 0.964983 21.7096 1.36357 20.6195 1.57853C19.7456 0.648127 18.5015 0.0661621 17.125 0.0661621C14.4811 0.0661621 12.3371 2.21012 12.3371 4.85271C12.3371 5.22848 12.3793 5.59363 12.4611 5.94419C8.48286 5.74436 4.95498 3.83925 2.59422 0.942957C2.18263 1.65018 1.94565 2.47231 1.94565 3.34884C1.94565 5.00954 2.79086 6.47573 4.07607 7.33369C3.29083 7.30954 2.55309 7.09352 1.90796 6.73474C1.9069 6.75464 1.9069 6.77481 1.9069 6.79577C1.9069 9.11434 3.55726 11.05 5.74739 11.4886C5.34535 11.5982 4.92234 11.6572 4.48554 11.6572C4.17717 11.6572 3.8773 11.6264 3.58566 11.5709C4.19495 13.4726 5.96234 14.8568 8.05773 14.8958C6.41905 16.1799 4.35497 16.945 2.1123 16.945C1.72618 16.945 1.34511 16.923 0.970398 16.8787C3.08888 18.2363 5.60435 19.029 8.30825 19.029Z" fill="white"/></svg>               
+                        </a>
+            
+                        <a href="#">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9692 0.881348C5.55278 0.881348 0.302979 6.13115 0.302979 12.5476C0.302979 18.964 5.55278 24.2138 11.9692 24.2138C18.3856 24.2138 23.6354 18.964 23.6354 12.5476C23.6354 6.13115 18.3856 0.881348 11.9692 0.881348ZM21.5938 11.9643C19.0662 11.5754 16.8301 11.5754 14.6913 11.867C14.4969 11.2837 14.2052 10.7976 13.9136 10.2143C16.1496 9.24214 17.9968 7.88108 19.2606 6.22837C20.6217 7.88108 21.4966 9.82545 21.5938 11.9643ZM17.8023 4.96453C16.6357 6.52002 14.983 7.68665 12.9414 8.56161C11.9692 6.71446 10.8998 4.96453 9.63596 3.21459C10.4137 3.02016 11.1915 2.92294 11.9692 2.92294C14.2052 2.92294 16.2468 3.70069 17.8023 4.96453ZM7.59437 3.99234C8.85821 5.64506 10.0248 7.39499 10.997 9.24214C8.66377 9.92267 5.84444 10.2143 2.63622 10.3115C3.31675 7.49221 5.16391 5.25618 7.59437 3.99234ZM2.34457 12.5476V12.2559C6.03887 12.2559 9.34431 11.867 11.9692 10.9921C12.1636 11.4782 12.4553 11.9643 12.6497 12.3531C9.3443 13.4225 6.62218 15.4641 4.5806 18.6723C3.21954 17.0196 2.34457 14.8808 2.34457 12.5476ZM6.03887 20.1306C7.98324 17.1168 10.4137 15.1725 13.4275 14.2975C14.3025 16.6308 14.983 19.0612 15.3719 21.5889C12.1636 22.7555 8.66377 22.1722 6.03887 20.1306ZM17.3162 20.5195C16.9274 18.1863 16.2468 15.9502 15.4691 13.8114C17.3162 13.5198 19.2606 13.617 21.4966 14.0059C21.0105 16.728 19.5523 19.0612 17.3162 20.5195Z" fill="white"/></svg>
+                        </a>
+            
+                        <a href="#">
+                            <svg width="14" height="27" viewBox="0 0 14 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.81701 9.30533H0.635315V13.5476H3.81701V26.2744H9.11984V13.5476H12.9379L13.3621 9.30533H9.11984V7.50237C9.11984 6.54786 9.33196 6.12363 10.2865 6.12363H13.3621V0.820801H9.33196C5.51392 0.820801 3.81701 2.51771 3.81701 5.69941V9.30533Z" fill="white"/></svg>                          
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+      </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
